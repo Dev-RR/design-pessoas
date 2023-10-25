@@ -1,0 +1,109 @@
+:root {
+    --width-img: 303px;
+    --height-img: 400px
+}
+
+.img0,
+.img00,
+.img1,
+.img2,
+.img3 {
+    width: var(--width-img);
+    height: var(--height-img);
+}
+
+body,
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0;
+
+}
+
+.estrutura {
+    display: grid;
+    grid-template-columns: 303px 303px 303px 303px;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "img1 card paragrafo img2"
+        "img0 img3 redes img00"
+    ;
+    max-width: 1304px;
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    grid-area: titulo;
+    font-size: 30px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.titulo h1 {
+    width: 1142px;
+    line-height: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img1 {
+    grid-area: img1;
+    background-image: url(../img/01.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.card {
+    grid-area: card;
+    border: 20px solid #F19A0E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.card h2 {
+    padding: 30px 10px;
+    width: 200px;
+}
+
+
+.paragrafo {
+    font-size: 16px;
+    padding: 30px;
+    width: 210px;
+    height: auto;
+}
+
+.img2 {
+    grid-area: img2;
+    background-image: url(../img/02.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+
+
+.img3 {
+    grid-area: img3;
+    background-image: url(../img/03.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.redes {
+    width: 300px;
+    height: 400px;
+    grid-area: redes;
+    border: 20px solid #F19A0E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
